@@ -15,7 +15,7 @@ namespace Midterm1
             int num3 = 0;
             //Prompts user to give 3 numbers
             Console.WriteLine("Enter 3 numbers: ");
-            //Converts user input to three variables for comparison
+            //Converts user input to three integer variables for comparison
             num1 = Convert.ToInt32(Console.ReadLine());
             num2 = Convert.ToInt32(Console.ReadLine());
             num3 = Convert.ToInt32(Console.ReadLine());
@@ -23,8 +23,8 @@ namespace Midterm1
             int[] myNumbers = { num1, num2, num3 };
             //Divides space between prompts
             Console.WriteLine("");
-            //Outputs largest value with myNumbers array
-            Console.WriteLine(myNumbers.Max());
+            //Outputs largest value from myNumbers array
+            Console.WriteLine($"The largest number is: {myNumbers.Max()}");
             //Pauses program to view
             Console.ReadLine();
         }
